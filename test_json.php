@@ -21,6 +21,10 @@ $data=array(
 		aray(1,'张山','男')
 		aray(1,'张山','男')
 		aray(1,'张山','男')
-)
-
+);
+echo iconv('utf-8','gbk',implode("\t",$title)),"\n";
+foreach ($data as $value) {
+	# code...
+	echo iconv('utf-8','gbk',implode("\t",$value)),"\n";
+}
 
